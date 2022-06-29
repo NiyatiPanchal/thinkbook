@@ -1,5 +1,10 @@
 import React from "react";
+import Notes from "./Notes";
 
-export const Home = () => {
-  return <div>This is Home</div>;
+export const Home = ({ showAlert }) => {
+  return (
+    <div>
+      <Notes showAlert={showAlert} />
+    </div>
+  );
 };
